@@ -1,0 +1,37 @@
+.dieu-khoan{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.tieu-de h1{
+    padding-top: 20px;
+    font-size: 45px;
+    color: brown;
+}
+.dieu-khoan .row img{
+    width: 400px;
+    height: 400px;
+    padding-bottom: 40px;
+}
+.dieu-khoan .row:nth-child(2) h3{
+    font-size: 25px;
+    padding: 15px 0;
+    font-weight: bold;
+    text-align: left;
+}
+.dieu-khoan .row:nth-child(2) p{
+    font-size: 18px;
+    text-align: justify;
+}
+.but{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.but a{
+    text-decoration: none;
+    color: brown;
+    border-radius: 15px;
+    background-color: #FEEAD3;
+    padding: 20px;
+    font-size: 30px;
+}

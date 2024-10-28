@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do Do Chicken</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=width-device, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="res.css">
+        <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/d0837e32c9.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../Images/logo.png" alt="Logo">
+            </div>
+
+            <div class="bar">
+                <ul class="sidebar">
+                    <li><a href="#"><i class="fa-solid fa-xmark fa-xl" onclick="hideSideBar()"></i></a></li>
+                    <li><a href="#" onclick="den1()">Trang chủ</a></li>
+                    <li><a href="#" onclick="den2()">Thực đơn</a></li>
+                    <li><a href="#">Đặt bàn</a></li>
+                    <li><a href="#">Đặt món</a></li>
+                    <li><a href="#" onclick="den3()">Liên hệ</a></li>
+                </ul>
+                <ul class="hideOnMobile">
+                    <li class="hideOnMobile" onclick="den1()"><a href="#" >Trang chủ</a></li>
+                    <li class="hideOnMobile" onclick="den2()"><a href="#">Thực đơn</a></li>
+                    <li class="hideOnMobile"><a href="#">Đặt bàn</a></li>
+                    <li class="hideOnMobile"><a href="#">Đặt món</a></li>
+                    <li class="hideOnMobile" onclick="den3()"><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar">
+                <a href="#"><i class="fa-solid fa-bars fa-xl" onclick="showSideBar()"></i></a>
+            </div>
+        </header>
+
+        <section class="big-image">
+            <div class="big-image-content">
+                <h2 id="trang-chu">Do Do Chicken</h2>
+                <p>Giòn ngon trong từng thớ thịt</p>
+                <button class="big-image-content-btn btn" onclick="den2()">Thực đơn</button>
+            </div>
+        </section>
+       
+        <section class="about section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h4>Thưởng thức miếng gà rán ngon giòn và nghe</h4>
+                        <h5>Câu chuyện</h5>
+                        <h2>Về Do Do Chicken <img src="../Images/logo.png" alt="logo"></h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="about-item">
+                        <h2>CHÀO MỪNG QUÝ KHÁCH ĐẾN VỚI DO DO CHICKEN</h2>
+                        <p>Do Do Chicken ra đời từ niềm đam mê với hương vị độc đáo, nơi mỗi miếng gà không chỉ là một món ăn mà còn là một tác phẩm nghệ thuật trong ẩm thực. Chúng tôi không chỉ chọn những nguyên liệu tươi ngon nhất mà còn kết hợp các gia vị bí truyền để tạo ra một hương vị đậm đà khó quên. Mỗi món ăn tại đây đều mang dấu ấn riêng, từ gà rán giòn rụm, thơm lừng cho đến các món sốt được chế biến cầu kỳ, mang hương vị riêng biệt mà độc đáo.</p>
+                        <p>Do Do Chicken không chỉ là nơi thưởng thức món ăn, mà còn là nơi chia sẻ niềm vui, kết nối những người yêu thích ẩm thực gà theo cách đầy sáng tạo và mới mẻ.</p>
+                    </div>
+
+                    <div class="about-item">
+                        <img src="../Images/background.jpg" alt="Background">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Thực đơn</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="menu-title">
+                        <button class="menu-button active" onclick="show()">Combo gà rán</button>
+                    
+                        <button class="menu-button" onclick="show1()">Gà rán</button>
+                        
+                        <button class="menu-button" onclick="show2()">Gà nướng</button>
+                        
+                        <button class="menu-button" onclick="show3()">Ăn kèm</button>
+                        
+                        <button class="menu-button" onclick="show4()">Tráng miệng</button>
+                    
+                        <button class="menu-button" onclick="show5()">Đồ uống</button>
+                    </div>
+                </div>
+
+                <div class="row justify-content">
+                    <div class="menu-items-content active" id="combo">
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà truyền thống">
+                                <p>Combo Gà truyền thống</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>99.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà sốt cay">
+                                <p>Combo Gà sốt cay</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>105.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà không xương">
+                                <p>Combo Gà giòn không xương</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>119.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà mật ong">
+                                <p>Combo Gà sốt mật ong</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>134.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà phô mai">
+                                <p>Combo Gà lắc phô mai</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>115.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà chiên mắm">
+                                <p>Combo Gà chiên mắm</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>110.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà thập cẩm">
+                                <p>Combo Gà sốt thập cẩm</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>125.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà sốt Hàn Quốc">
+                                <p>Combo Gà sốt Hàn Quốc</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>150.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà mix">
+                                <p>Combo Gà mix</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>159.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Cặp đôi">
+                                <p>Combo Cặp đôi</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>259.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà xì dầu">
+                                <p>Combo Gà mix sốt Xì dầu tỏi</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>239.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà trứng muối">
+                                <p>Combo Gà mix sốt trứng muối</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>239.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà tam vị">
+                                <p>Combo Gà tam vị</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>200.000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items-content" id="ga-ran">
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà truyền thống">
+                                <p>Gà truyền thống</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>45.000 VND</p>
+                            </div>
+                        </div>
+    
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà sốt cay">
+                                <p>Gà sốt cay</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>60.000 VND</p>
+                            </div>
+                        </div>
+    
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà giòn không xương">
+                                <p>Gà giòn không xương</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>70.000 VND</p>
+                            </div>
+                        </div>
+    
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà sốt mật ong">
+                                <p>Gà sốt mật ong</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>70.000 VND</p>
+                            </div>
+                        </div>
+    
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà lắc phô mai">
+                                <p>Gà lắc phô mai</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>65.000 VND</p>
+                            </div>
+                        </div>
+    
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà chiên mắm">
+                                <p>Gà chiên mắm</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>60.000 VND</p>
+                            </div>
+                        </div>
+    
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà sốt thập cẩm">
+                                <p>Gà sốt thập cẩm</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>70.000 VND</p>
+                            </div>
+                        </div>
+    
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà tsốt Hàn Quốc">
+                                <p>Gà sốt Hàn Quốc</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>90.000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items-content" id="ga-nuong">
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà nướng sốt BBQ">
+                                <p>Gà nướng sốt BBQ</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>150.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà nướng bơ tỏi">
+                                <p>Gà nướng bơ tỏi</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>175.000 VND</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà luộc">
+                                <p>Gà luộc</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>1500.000 VND/con</p>
+                            </div>
+                        </div> -->
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Gà nướng ống lam">
+                                <p>Gà nướng ống lam</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>139.000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items-content" id="an-kem">
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Củ cải muối">
+                                <p>Củ cải muối</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>Free</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Salad bắp cải">
+                                <p>Salad bắp cải</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>Free</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Bánh khoai">
+                                <p>Bánh khoai</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>49.000 VND</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Kim chi">
+                                <p>Kim chi</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>Free</p>
+                            </div>
+                        </div> -->
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Ngô chiên bơ">
+                                <p>Ngô chiên bơ</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>25.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Khoai tây chiên">
+                                <p>Khoai tây chiên</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>35.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Khoai tây lắc phô mai">
+                                <p>Khoai tây lắc phô mai</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>35.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Khoai tây lắc rong biển">
+                                <p>Khoai tây lắc rong biển</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>35.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Salad ức gà">
+                                <p>Salad ức gà</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>49.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Mỳ ý sốt kem">
+                                <p>Mỳ ý sốt kem</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>35.000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items-content" id="trang-mieng">
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Bánh phô mai">
+                                <p>Bánh phô mai</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>25.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Bánh táo nướng">
+                                <p>Bánh táo chiên</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>30.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Bánh mật ong">
+                                <p>Bánh mật ong</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>35.000 VND</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Tart trứng">
+                                <p> Bánh tart trứng</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>50.000 VND</p>
+                            </div>
+                        </div> -->
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Bánh bông lan">
+                                <p>Bánh bông lan</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>35.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Bánh kem">
+                                <p>Bánh kem</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>50.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Kem que">
+                                <p>Kem que (vani, socola, táo xanh, dâu)</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>10.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Sữa chua hoa quả">
+                                <p>Sữa chua hoa quả</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>25.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Hoa quả lắc muối ớt">
+                                <p>Hoa quả lắc muối ớt</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>25.000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items-content" id="do-uong">
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Xoài">
+                                <p>Coca</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>15.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Xoài">
+                                <p>Pepsi</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>15.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Xoài">
+                                <p>7Up</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>15.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Xoài">
+                                <p>Spite</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>15.000 VND</p>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                            <div class="food-item">
+                                <img src="../Images/combo gà rán sốt phomai.jpg" alt="Xoài">
+                                <p>Fanta</p>
+                            </div>
+        
+                            <div class="food-price">
+                                <p>15.000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="phan-hoi section-padding">
+            <div class="container">
+                <div class="row justify-content">
+                    <div class="section-title">
+                        <h3>Ý Kiến</h3>
+                        <h2>Phản hồi</h2>
+                    </div>
+                </div>
+                <div class="row justify-content">
+                    <div class="phan-hoi-items">
+                        <div class="phan-hoi-item">
+                            <div class="phan-hoi-item-content">
+                                <div class="phan-hoi-item-content-ten">
+                                    <h2>Ninh TiTo</h2>
+                                    <p>Food Reviewer</p>
+                                </div>
+
+                                <div class="phan-hoi-item-content-img">
+                                    <img src="../Images/khoai lắc rong biển.jpg" alt="Ninh TiTo">
+                                </div>
+                            </div>
+
+                            <div class="phan-hoi-item-nd">
+                                <p>Mình cực kì ấn tượng bởi cách bài trí và hương vị của món ăn. <br>Gà ở Do Do có hương vị đậm đà, đặc trưng, khiến mình vô cùng ấn tượng!</p>
+                            </div>
+
+                            <div class="phan-hoi-item-sao">
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="phan-hoi-item">
+                            <div class="phan-hoi-item-content">
+                                <div class="phan-hoi-item-content-ten">
+                                    <h2>Vũ Mỹ Linh</h2>
+                                    <p>Food Reviewer</p>
+                                </div>
+
+                                <div class="phan-hoi-item-content-img">
+                                    <img src="../Images/khoai lắc rong biển.jpg" alt="Vũ Mĩ Linh">
+                                </div>
+                            </div>
+
+                            <div class="phan-hoi-item-nd">
+                                <p>Nhà hàng không chỉ chú trọng đến chất lượng món ăn mà còn chỉn chu trong việc phục vụ khách hàng. <br>Các bạn nhân viên ở đây siêu dễ thương. <br>Nói chung là 10 điểm!</p>
+                            </div>
+
+                            <div class="phan-hoi-item-sao">
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+
+                        <div class="phan-hoi-item">
+                            <div class="phan-hoi-item-content">
+                                <div class="phan-hoi-item-content-ten">
+                                    <h2>Khoai Lang Thang</h2>
+                                    <p>Food Reviewer</p>
+                                </div>
+
+                                <div class="phan-hoi-item-content-img">
+                                    <img src="../Images/khoai lắc rong biển.jpg" alt="Khoai Lang Thang">
+                                </div>
+                            </div>
+
+                            <div class="phan-hoi-item-nd">
+                                <p>Là một tín đồ của gà rán, mình đã quay lại nhà hàng vô số lần bởi hương vị và nước sốt. <br>Từng miếng gà ngon giòn, đậm sốt. Mọi người nên gọi "Combo gà tam vị" nhé!</p>
+                            </div>
+
+                            <div class="phan-hoi-item-sao">
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nhan-vien section-padding">
+            <div class="container">
+                <div class="row justify-content">
+                    <div class="section-title">
+                        <h3>Đội ngũ</h3>
+                        <h2>Đầu bếp</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content">
+                    <div class="nhan-vien-items">
+                        <div class="nhan-vien-item">
+                            <div class="gioi-thieu">
+                                <img src="../Images/462114822_1763137877555583_4217446873706249141_n.jpg" alt="Bếp trưởng">
+                                <div class="nhan-vien-item-ten">
+                                    <h1>Christine Hà</h1>
+                                    <h4>Bếp phó</h4>
+                                    <h4>Đồng sáng lập</h4>
+                                </div>
+                            </div>
+                            <div class="nhan-vien-mo-ta">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Với vai trò là người đồng sáng lập, chị Hà luôn tận tâm với công việc trong nhà hàng cũng như trong việc nấu nướng.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Chị chính là "tác giả" của món "Gà sốt mật ong" - một món gà bestseller của Do Do Chicken.</p>
+                            </div>
+                        </div>
+
+                        <div class="nhan-vien-item">
+                            <div class="gioi-thieu">
+                                <img src="../Images/462114822_1763137877555583_4217446873706249141_n.jpg" alt="Đầu bếp">
+                                <div class="nhan-vien-item-ten">
+                                    <h1>Nguyễn Thanh Tùng</h1>
+                                    <h4>Bếp trưởng</h4>
+                                    <h4>Nhà sáng lập</h4>
+                                </div>
+                            </div>
+                            <div class="nhan-vien-mo-ta">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Bắt nguồn từ xe gà rán bán dạo, với đam mê và tâm huyết của mình, anh Tùng đã phát triển Do Do như ngày nay. </p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Và để giữ được hương vị đặc trưng như ngày đầu, anh Tùng tự mình làm bếp trưởng, phụ trách chính trong việc nấu các món ăn.</p>
+                            </div>
+                        </div>
+
+                        <div class="nhan-vien-item">
+                            <div class="gioi-thieu">
+                                <img src="../Images/462114822_1763137877555583_4217446873706249141_n.jpg" alt="Đầu bếp">
+                                <div class="nhan-vien-item-ten">
+                                    <h1>Dương Huy Khải</h1>
+                                    <h4>Đầu bếp</h4>
+                                </div>
+                            </div>
+                            <div class="nhan-vien-mo-ta">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Với kinh nghiệm hơn 10 năm đứng bếp của mình, đầu bếp Dương Huy Khải hứa hẹn tâm huyết với từng món ăn và sáng tạo ra nhiều công thức mới mẻ và đặc biệt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footers section-padding">
+            <div class="container">
+                <div class="row justfy-content">
+                    <div class="footer-item">
+                        <h2>Địa chỉ</h2>
+                        <p><span>Cơ sở 1:</span> Số 3 đường Cầu Giấy, phường Láng Thượng, quận Đống Đa, Hà Nội</p>
+                        <br>
+                        <p><span>Cơ sở 2:</span> Số 99 đường Nguyễn Chí Thanh, phường Láng Hạ, quận Đống Đa, Hà Nội</p>
+                    </div>
+
+                    <div class="footer-item">
+                        <h2>Giờ mở cửa</h2>
+                        <p>Thứ Hai - Thứ Sáu: 9:00 - 23:00</p>
+                        <p>Thứ Bảy - Chủ Nhật: 8:00 - 23:30</p>
+                    </div>
+
+                    <div class="footer-item">
+                        <h2>Liên hệ</h2>
+                        <p>Hotline: <a href="tel:0123456789">0123 456 789</a></p>
+                        <p>Email: <a href="mailto:DoDoChicken@gmail.com">DoDoChicken@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="footer-item">
+                        <h2>Thông tin</h2>
+                        <p>Tin tức</p>
+                        <p>Tin khuyến mãi</p>
+                        <p>Tuyển dụng</p>
+                        <p>Nhượng quyền</p>
+                    </div>
+
+                    <div class="footer-item">
+                        <h2>Hỗ trợ</h2>
+                        <p><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></p>
+                        <p><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></p>
+                        <p>Chăm sóc khách hàng</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="footer-item">
+                        <h2>Theo dõi chúng tôi trên các nền tảng xã hội</h2>
+                        <p>Quét mã QR để truy cập:</p>
+                        <div class="fb">
+                            <p>Facebook: </p>
+                            <img src="../Images/logo.png" alt="QR Code dẫn đến Facebook của chúng tôi" />
+                        </div>
+
+                        <div class="ig">
+                            <p>Intargram: </p>
+                            <img src="../Images/logo.png" alt="QR Code dẫn đến Intargram của chúng tôi" />
+                        </div>
+
+                        <div class="ytb">
+                            <p>Youtube: </p>
+                            <img src="../Images/logo.png" alt="QR Code dẫn đến Youtube của chúng tôi" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>&copy  2022 Do Do Chicken All Rights Reserved Site by LDCC</footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
