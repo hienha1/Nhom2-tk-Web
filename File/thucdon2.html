@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Đơn</title>
+    <link  rel="stylesheet" href="thucdon.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="res.css">
+    <script src="https://kit.fontawesome.com/d0837e32c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="Logo">
+        </div>
+
+        <div class="bar">
+            <ul class="sidebar">
+                <li><a href="#"><i class="fa-solid fa-xmark fa-xl" onclick="hideSideBar()"></i></a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Thực đơn</a></li>
+                <li><a href="#">Đặt bàn</a></li>
+                <li><a href="#">Đặt món</a></li>
+                <li><a href="#" onclick="den3()">Liên hệ</a></li>
+            </ul>
+            <ul class="hideOnMobile">
+                <li class="hideOnMobile"><a href="index.html" >Trang chủ</a></li>
+                <li class="hideOnMobile" ><a href="#">Thực đơn</a></li>
+                <li class="hideOnMobile"><a href="#">Đặt bàn</a></li>
+                <li class="hideOnMobile"><a href="#">Đặt món</a></li>
+                <li class="hideOnMobile" onclick="den3()"><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <a href="#"><i class="fa-solid fa-bars fa-xl" onclick="showSideBar()"></i></a>
+        </div>
+    </header>
+    <section id="menu">
+        <div class="menu-head">
+            <h1>Thực đơn</h1>
+            <br>
+        </div>
+        <h2>Combo gà rán </h2>
+        <div class="menu-item-conten">
+           
+            <div class="menu-item">
+                <img src="../anh123.jpg/combothapcam.jpg" alt="Combo  Gà Rán Truyền Thống">
+                <div class="menu-details">
+                    <p class="item-name">Combo  Gà Rán Truyền Thống</p>
+                    <p class="note">Gồm: 2 miếng gà rán + 1 phần khoai tây + 1pepsi</p>
+                </div>
+                <span class="price">99.000 VNĐ</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combogahanquoc.jpg" alt="combo Gà Rán sốt Cay">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo  Gà Rán Sốt Cay </p>
+                    <p class="note">Gồm:  2 miếng gà rán xốt cay + 1 phần khoai tây phomai + 1pepsi</p>
+                </div>
+                <span class="price">105.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combogakhongxuong.jpg" alt="Combo Gà Giòn Không Xương">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo Gà Giòn Không Xương </p>
+                    <p class="note">Gồm : 1 phần gà rán + 1 phần my y + 1 coca</p>
+                </div>
+                <span class="price">119.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combogamatong.jpg" alt="Combo Gà Rán Mật ong">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo Gà Rán Mật ong </p>
+                    <p class="note">Combo gà rán mật ong</p>
+                </div>
+                <span class="price">134.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combophomai.jpg" alt=" alt="combo Gà Rán phomai">
+                <div class="menu-details">
+                    
+                    <p class="item-name"> combo Gà Rán phomai</p>
+                    <p class="note">Gồm :1 Gà rán phomai + 1 mì ý + 1 pepsi</p>
+                </div>
+                <span class="price">115.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combochienmam.jpg"  alt="Combo Gà Rán chiên mắm">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo Gà Rán chiên mắm </p>
+                    <p class="note">Gồm :1 Gà chiên mắm + 1salad +1 coca</p>
+                </div>
+                <span class="price">110.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combothapcam.jpg" alt="Combo Gà Rán thập cẩm">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo Gà Rán thập cẩm </p>
+                    <p class="note">Gồm: 2 miếng gà truyền thống + 2 gà phô mai<br>
+                        + 1 khoai chien +1 coca</p>
+                </div>
+                <span class="price">125.000 VNĐ</span>
+                
+            </div>
+
+            <div class="menu-item">
+                <img src="../anh123.jpg/combogahanquoc.jpg" alt="Combo Gà Rán sốt Hàn Quốc">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo Gà Rán sốt Hàn Quốc </p>
+                    <p class="note">Gồm:1/2 gà rán sốt hàn quốc + 2 khoai chien +2 pepsi</p>
+                </div>
+                <span class="price">150.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combomix.jpg" alt="Combo mix vị">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo mix vị </p>
+                    <p class="note">Gồm:1/2 gà rán nguyên bản +1/2 gà rán sốt mù tạt 1 coca</p>
+                </div>
+                <span class="price">159.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combocapdoi.jpg" alt="Combo cặp đôi">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo cặp đôi</p>
+                    <p class="note">Gà nguyên con mix<br>
+                        (1/2  rán truyền thống + 1 khoai tay +1 coca +1 pepsi)</p>
+                </div>
+                <span class="price">259.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/sotsidautoi.jpg" alt="Combo gà xì dầu tỏi">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo gà xì dầu tỏi</p>
+                    <p class="note">Gà nguyên con mix <br>
+                        (1/2 Gà rán + 1/2 sốt xì dầu tỏi )</p>
+                </div>
+                <span class="price">239.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combotrungmuoi.jpg" alt="Combo trứng muối">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo trứng muối</p>
+                    <p class="note">Gà nửa con mix trứng muối<br>
+                        (1/2 trứng muối +1 khoai tay + pepsi)</p>
+                </div>
+                <span class="price">150.000 VNĐ</span>
+                
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/sotrose.jpg" alt="Combo gà rán 3 loại sốt">
+                <div class="menu-details">
+                    
+                    <p class="item-name">Combo gà rán 3 loại sốt</p>
+                   
+                    <p class="note">gà rán sốt mù tạt , phomai, sốt cay</p>
+                </div>
+                <span class="price">200.000 VNĐ</span>
+                
+            </div>
+           
+
+        </div>
+        <h2>Gà Rán lẻ</h2>
+        <div class="menu-item-conten">
+            <div class="menu-item">
+                <img src="../anh123.jpg/garantruyenthong.jpg" alt="Gà Truyền Thống">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà Truyền Thống </strong></p>
+                </div>
+                <span class="price">45.000VND</span>
+
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/gaxotcay.jpg" alt="Gà rán sốt cay">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà rán sốt cay</strong></p>
+
+                </div>
+                <span class="price">60.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/gakhongxuong.jpg" alt="Gà giòn không  xương">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà giòn không xương</strong></p>
+                </div>
+                <span class="price">70.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/combogamatong.jpg" alt="Gà rán mật ong">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà rán mật ong</strong></p>
+                </div>
+                <span class="price">70.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/garanphomai.jpg" alt="Gà rán sốt phomai">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà rán sốt phomai</strong></p>
+                </div>
+                <span class="price">65.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/gachienmam.jpg" alt="Gà rán mắm tỏi">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà rán mắm tỏi</strong></p>
+                </div>
+                <span class="price">60.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/garanle.jpg" alt="Gà rán thập cẩm ">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà rán thập cẩm</strong></p>
+                </div>
+                <span class="price">70.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/garanle.jpg" alt="Gà rán sốt HQ">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà rán sốt HQ</strong></p>
+                </div>
+                <span class="price">90.000VND</span>
+            </div>
+        </div>
+        <h2>Một số món gà khác</h2>
+        <div class="menu-item-conten">
+            <div class="menu-item">
+                <img src="../anh123.jpg/gabbq.jpg" alt="Gà nướng BBQ">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà nướng BBQ</strong></p>
+                </div>
+                <span class="price">150.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/gatoi.jpg" alt=" Gà nướng tỏi">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà nướng tỏi</strong></p>
+                </div>
+                <span class="price">175.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/ganuongong.jpg" alt="Gà nướng ống lam">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Gà nướng ống lam</strong></p>
+                </div>
+                <span class="price">139.000VND</span>
+            </div>
+
+        </div>
+        <h2>Món ăn kèm </h2>
+        <div class="menu-item-conten">
+
+            <div class="menu-item">
+                <img src="../anh123.jpg/khoailacphomai.jpg" alt="Khoai tây chiên">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Khoai tây chiên</strong></p>
+                </div>
+                <span class="price">35.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/khoairongbien.jpg" alt="Khoai tây vị rong biển">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Khoai tây vị rong biển </strong></p>
+                </div>
+                <span class="price">35.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/khoailacphomai.jpg" alt="Khoai tây lắc phomai">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Khoai tây lắc phoma</strong></p>
+                </div>
+                <span class="price">35.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/banhkhoai.jpg" alt="Bánh khoai ">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Bánh khoai</strong></p>
+                </div>
+                <span class="price">49.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/ngochien.jpg" alt="Ngô chiên">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Ngô chiên</strong></p>
+                </div>
+                <span class="price">25.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/bapcai.jpg" alt="salad bắp cải">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Salad bắp cải</strong></p>
+                </div>
+                <span class="price"> Free</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/ucga.jpg" alt=" Salad ức gà">
+                <div class="menu-details">
+                    <p class="item-name">Salad ức gà</p>
+                </div>
+                <span class="price">49.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/myy.jpg" alt="Mỳ ý">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Mỳ ý</strong></p>
+                </div>
+                <span class="price">35.000VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/cucai.jpg" alt="Củ cải muối">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Củ cải muối </strong></p>
+                </div>
+                <span class="price">Free</span>
+            </div>
+        </div>
+       
+
+        
+        <h2>Nước </h2>
+        <div class=" menu-item-conten">
+            
+            <div class="menu-item">
+                <img src="../anh123.jpg/coca.jpg" alt="coca">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Coca</strong></p>
+                </div>
+                <span class="price">15.000 VNĐ</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/pepsi.jpg" alt="pepsi">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Pepsi</strong></p>
+                </div>
+                <span class="price">15.000 VNĐ</span>
+
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/7up.jpg" alt="7up">
+                <div class="menu-details">
+                    <p class="item-name"><strong>7UP</strong></p>
+                </div>
+                <span class="price">15.000 VND</span>
+            </div>
+            <div class="menu-item">
+                <img src="../anh123.jpg/sprite.jpg" alt="sprite">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Spite</strong></p>
+                </div>
+                <span class="price">15.000VND</span>
+
+            </div>
+            <div class="menu-item">
+                <img src="anh123.jpg/fanta.jpg" alt="fanta">
+                <div class="menu-details">
+                    <p class="item-name"><strong>Fanta</strong></p>
+                </div>
+                <span class="price">15.000VND</span>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Chúc quý khách ngon miệng *-*</p>
+    </div>
+
+    <section class="footers section-padding">
+        <div class="container">
+            <div class="row justfy-content">
+                <div class="footer-item">
+                    <h2>Địa chỉ</h2>
+                    <p><span>Cơ sở 1:</span> Số 3 đường Cầu Giấy, phường Láng Thượng, quận Đống Đa, Hà Nội</p>
+                    <br>
+                    <p><span>Cơ sở 2:</span> Số 99 đường Nguyễn Chí Thanh, phường Láng Hạ, quận Đống Đa, Hà Nội</p>
+                </div>
+
+                <div class="footer-item">
+                    <h2>Giờ mở cửa</h2>
+                    <p>Thứ Hai - Thứ Sáu: 9:00 - 23:00</p>
+                    <p>Thứ Bảy - Chủ Nhật: 8:00 - 23:30</p>
+                </div>
+
+                <div class="footer-item">
+                    <h2>Liên hệ</h2>
+                    <p>Hotline: <a href="tel:0123456789">0123 456 789</a></p>
+                    <p>Email: <a href="mailto:DoDoChicken@gmail.com">DoDoChicken@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="footer-item">
+                    <h2>Thông tin</h2>
+                    <p>Tin tức</p>
+                    <p>Tin khuyến mãi</p>
+                </div>
+
+                <br><br>
+
+                <div class="footer-item">
+                    <h2>Hỗ trợ</h2>
+                    <p><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></p>
+                    <p><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="footer-item">
+                    <h2>Theo dõi chúng tôi trên các nền tảng xã hội</h2>
+                    <p>Quét mã QR để truy cập:</p>
+                    <div class="fb">
+                        <p>Facebook: </p>
+                        <img src="../Images/logo.png" alt="QR Code dẫn đến Facebook của chúng tôi" />
+                    </div>
+
+                    <div class="ig">
+                        <p>Intargram: </p>
+                        <img src="../Images/logo.png" alt="QR Code dẫn đến Intargram của chúng tôi" />
+                    </div>
+
+                    <div class="ytb">
+                        <p>Youtube: </p>
+                        <img src="../Images/logo.png" alt="QR Code dẫn đến Youtube của chúng tôi" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy  2022 Do Do Chicken All Rights Reserved Site by LDCC</footer>
+
+    <script src="index.js"></script>
+    
+</body>
+
+</html>
