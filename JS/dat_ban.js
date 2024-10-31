@@ -34,5 +34,13 @@ document.getElementById("reservationForm").addEventListener("submit",function(ev
         return;
     }
 
+    let maxReservationDate = new Date();
+    maxReservationDate.setMonth(maxReservationDate.getMonth() + 3);
+
+    if (selectedDate > maxReservationDate) {
+        alert("Không thể đặt bàn quá 3 tháng kể từ hôm nay.");
+        return;
+    }
+
     alert("Dat ban thanh cong!");
 });
