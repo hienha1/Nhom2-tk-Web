@@ -1,0 +1,88 @@
+body{
+    background-color: #f9f9f9;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#menu{
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dotted #000;
+}
+
+.menu-item img{
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.menu-details {
+    flex-grow: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    white-space: nowrap; /* Đảm bảo giá không xuống dòng */
+    align-self: center;  /* Căn giá theo chiều dọc với tên món */
+}
+.price:hover{
+    color: brown;
+    cursor: pointer;
+}
+.contact-button {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #c0392b;
+}
+#menu h1, #menu h2 {
+    color:#b03030; /* Màu chữ */
+    text-align: center; 
+}
+#menu h1{
+    font-size: 70px;
+    padding: 10px;
+    background-color: #FEEAD3;
+    color: #000;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+#menu h2{
+    font-size: 50px;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color:#999;
+}

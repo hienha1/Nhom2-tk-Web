@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+/* top */
+.logo img{
+    width: 58px;
+}
+.flag img{
+    height: 58px;
+    width: 58px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    padding: 0 5vw;
+    border-bottom: 0.5px brown solid;
+    background-color: #FEEAD3;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 99;
+    background-color: #FEEAD3;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar ul li a{
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+    padding: 20px;
+}
+
+.navbar i{
+    display: flex;
+}
+.bar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.bar ul li a{
+    padding: 0 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline;
+    align-items: center;
+}
+.bar ul li:hover{
+    color: brown;
+}
+
+
+/* big image */
+.big-image-content-btn, .about-item .btn{
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 5px solid #FEEAD3;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    font-size: 25px;
+}
+.big-image-content-btn:hover, .about-item .btn:hover{
+    background-color: white;
+    color: brown;
+}
+
+.section-padding{
+    padding: 80px 0;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* slide one */
+.big-image{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.big-image::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/background-trang-chu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+    animation: inOut 5s infinite;
+}
+@keyframes inOut{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+.big-image::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -2;
+}
+.big-image .big-image-content{
+    text-align: center;
+    max-width: 500px;
+    margin-top: 15%;
+}
+.big-image .big-image-content h2{
+    font-size: 60px;
+    color: white;
+}
+.big-image .big-image-content p{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Lịch sử nhà hàng */
+.about.section-padding{
+    background-color: #FEEAD3;
+    padding-bottom: 30px;
+}
+.section-title{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    padding-bottom: 30px;
+}
+.section-title h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section-title img{
+    width: 60px;
+    height: 60px;
+}
+.section-title h5{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.about-item h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.about-item p{
+    font-size: 20px;
+    margin: 10px;
+}
+.about .about-item img{
+    width: 45vw;
+    border-radius: 15px;
+}
+.about-item:first-of-type{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    text-align: justify;
+    margin-right: 15px;
+}
+
+/* thực đơn */
+.menu{
+    background-color: white;
+}
+.menu .section-title h2{
+    clear: both;
+}
+.menu .section-title h2::before{
+    display: block;
+}
+.menu-title{
+    width: 100%;
+    text-align: center;
+}
+.menu-title .menu-button{
+    margin: 10px 20px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.menu-title .menu-button:hover{
+    color: brown;
+}
+.menu-button.active{
+    color: brown;
+}
+/* ds món ăn */
+.food-items{
+    width: 50%;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.food-items::before{
+    content: "";
+    position: absolute;
+    border-bottom: 2px rgba(0, 0, 0, 0.642) dotted;
+    width: 95%;
+    margin-top: 125px;
+}
+.food-items:hover .food-price p{
+    color: brown;
+    cursor: pointer;
+}
+.food-items:hover .food-item p{
+    cursor: pointer;
+}
+.food-item{
+    display: flex;
+    align-items: center;
+}
+.food-item img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.menu-items-content.active{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-items-content{
+    display: none;
+}
+/* phản hồi */
+.phan-hoi{
+    background-color: #FEEAD3;
+}
+.phan-hoi .section-title{
+    clear: both;
+}
+.phan-hoi-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.phan-hoi-item{
+    width: 30%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    margin: 0 15px;
+    border: 2px black solid;
+    background-color: #e0ba8f;
+    border-radius: 30px;
+    padding: 10px;
+}
+.phan-hoi-item-content{
+    display: flex;
+    justify-content: space-between;
+}
+.phan-hoi-item-content-img{
+    padding-right: 40px;
+}
+.phan-hoi-item-content-img img{
+    width: 120px;
+    height: 130px;
+    border-radius: 30%;
+    border: 2px black solid;
+}
+.phan-hoi-item-content-ten h2{
+    color: brown;
+    font-size: 30px;
+}
+.phan-hoi-item-nd, .phan-hoi-item-sao{
+    text-align: left;
+    font-size: 18px;
+}
+
+
+/* đầu bếp */
+.nhan-vien{
+    background-color: #e0ba8f;
+}
+.nhan-vien-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nhan-vien-item{
+    width: 30%;
+    height: 800px;
+    float: left;
+    text-align: center;
+    margin: 0 15px;
+    border: 2px #dfb482 solid;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.nhan-vien-items .nhan-vien-item .gioi-thieu{
+    padding: 30px 0;  
+}
+.nhan-vien-items .nhan-vien-item .gioi-thieu img{
+    width: 280px;
+    height: 400px;
+}
+.nhan-vien-item .gioi-thieu .nhan-vien-item-ten{
+    background-color: #FEEAD3;
+    padding: 10px 0;
+    height: 100px;
+    margin-top: 5px;
+    border-radius: 30%;
+    transform: translateY(-35%);
+}
+.nhan-vien-item .gioi-thieu .nhan-vien-item-ten:hover{
+    transform: translateY(-70%);
+    background-color: brown;
+}
+.nhan-vien-item .gioi-thieu .nhan-vien-item-ten h1{
+    color: brown;
+    font-weight: bold;
+}
+.nhan-vien-item .gioi-thieu .nhan-vien-item-ten:hover h1{
+    color: #FEEAD3;
+}
+.nhan-vien-item .gioi-thieu .nhan-vien-item-ten h4{
+    font-size: 20px;
+}
+.nhan-vien-items .nhan-vien-item .nhan-vien-mo-ta{
+    font-size: 22px;
+    text-align: justify;
+}
+
+/* footer */
+.footers{
+    background-color: #FEEAD3;
+    line-height: 1.3;
+    padding: 30px 0px;
+    padding-left: 15px;
+}
+.footers span{
+    font-weight: bold;
+}
+.footers p{
+    font-size: 20px;
+}
+.footers .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footers .row{
+    width: 30%;
+    float: left;
+}
+.footer-item img{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.footer-item .fb, .footer-item .ig, .footer-item .ytb{
+    display: flex;
+    align-items: center;
+}
+.footer-item .fb p, .footer-item .ig p, .footer-item .ytb p{
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+}
+.footers .footer-item a{
+    color: black;
+    text-decoration: none;
+}
+.footers .footer-item a:hover{
+    color: brown;
+}
+
+footer{
+    /* position: afixed; */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-style: italic;
+}
