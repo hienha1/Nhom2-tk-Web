@@ -148,6 +148,9 @@
         transform: translateY(50px);
         margin-left: 10px;
     }
+    .phan-hoi-item{
+        height: 330px;
+    }
 /* ds món ăn */
     .food-items p{
         font-size: 15px;
@@ -165,11 +168,71 @@
         font-size: 10px;
     }
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 500px){
     .about .section-title h4{
-        font-size: 10px;
+        font-size: 24px;
     }
-    .about-item{
-        clear: both;
+    .about .row:nth-child(2){
+        width: 100%;
+        display: block;
     }
+    .about .about-item:first-of-type{
+        width: 100%;
+    }
+/* phản hồi */
+    .phan-hoi-items{
+        display: flex;
+    }
+    .phan-hoi-item{
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        margin: 0 15px;
+        border: 2px black solid;
+        background-color: #e0ba8f;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    .phan-hoi-item-content-img{
+        display: none;
+    }
+    .phan-hoi-item-nd{
+        font-size: 15px;
+    }
+/* đầu bếp */
+.nhan-vien-items{
+    display: flex;
+    align-items: center;
+}
+.nhan-vien-item{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin: 0 10px;
+    border: 2px #dfb482 solid;
+    padding: 10px;
+    /* padding-bottom: 20px; */
+}
+.nhan-vien-items .nhan-vien-item .gioi-thieu{
+    padding: 2px 0;  
+}
+.nhan-vien-items .nhan-vien-item .gioi-thieu img{
+    width: 100px;
+    height: 200px;
+}
+.nhan-vien-item .gioi-thieu .nhan-vien-item-ten{
+    background-color: #FEEAD3;
+    /* padding: 10px 0; */
+    height: 90px;
+    /* margin-top: 5px; */
+    border-radius: 30%;
+    transform: translateY(-35%);
+}
+.nhan-vien-item .gioi-thieu .nhan-vien-item-ten h4{
+    font-size: 18px;
+}
+.nhan-vien-items .nhan-vien-item .nhan-vien-mo-ta{
+    font-size: 15px;
+    text-align: justify;
+}
 }

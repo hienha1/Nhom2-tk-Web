@@ -270,6 +270,7 @@ header{
 /* phản hồi */
 .phan-hoi{
     background-color: #FEEAD3;
+    padding-bottom: 10px;
 }
 .phan-hoi .section-title{
     clear: both;
