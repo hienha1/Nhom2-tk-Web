@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/tintuc1.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/res.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6d0358a838.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+
+        <div class="bar">
+            <ul class="sidebar" style="display: none;"> 
+                <li><a href="#"><i class="fa-solid fa-xmark fa-xl" onclick="hideSideBar()"></i></a></li>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Về Do Do Chicken</a></li>
+                <li><a href="#">Đặt bàn</a></li>
+                <li><a href="#">Đặt món</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <ul class="hideOnMobile">
+                <li class="hideOnMobile"><a href="#">Trang chủ</a></li>
+                <li class="hideOnMobile"><a href="#">Về Do Do Chicken</a></li>
+                <li class="hideOnMobile"><a href="#">Đặt bàn</a></li>
+                <li class="hideOnMobile"><a href="#">Đặt món</a></li>
+                <li class="hideOnMobile"><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">...</div>
+        
+        <div class="navbar">
+            <a href="#"><i class="fa-solid fa-bars fa-xl" onclick="showSideBar()"></i></a>
+        </div>
+    </header>
+    <main>
+        <img src="../Images/tin-tuc-1.png" alt="giang sinh">
+        <!-- Phần khuyến mãi Noel -->
+        <section class="promotion">
+            <h2>Giáng Sinh An Lành - Gà Rán Siêu Ưu Đãi Giảm 50%!</h2>
+            <p>
+                🎄 <strong>Mùa Giáng Sinh</strong> này, hãy cùng gia đình và bạn bè thưởng thức những món gà rán ngon tuyệt với 
+                <strong>ưu đãi đặc biệt giảm 50%</strong> cho tất cả các phần gà từ ngày <strong>20/12 đến 25/12</strong>!
+            </p>
+            <p>
+                🍗 <strong>Điều đặc biệt:</strong> Tặng ngay <strong>một phần nước ngọt miễn phí</strong> cho mỗi hóa đơn từ 150k. Bữa tiệc Giáng Sinh sẽ trọn vẹn hơn bao giờ hết với gà rán giòn rụm và những ưu đãi hấp dẫn chỉ có trong mùa lễ hội này.
+            </p>
+            <p>
+                🎅 <strong>Ưu đãi áp dụng cả tại nhà hàng và online.</strong> Hãy nhanh tay đặt ngay để đón Giáng Sinh ấm áp cùng những món ngon không thể chối từ!
+            </p>
+            <p>
+                ⏰ <strong>Chỉ trong 6 ngày duy nhất</strong>, đừng bỏ lỡ cơ hội có một Giáng Sinh đầy hương vị tại Nhà Hàng Gà Rán!
+            </p>
+            <button class="promo-btn">Đặt Hàng Ngay</button>
+        </section>
+    </main>
+    <script src="../JS/tintuc.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>

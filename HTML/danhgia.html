@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh Giá Nhà Hàng Gà Rán</title>
+    <link rel="stylesheet" href="../CSS/danhgia.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/res.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/d0837e32c9.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="Logo">
+        </div>
+
+        <div class="bar">
+            <ul class="sidebar">
+                <li><a href="#"><i class="fa-solid fa-xmark fa-xl" onclick="hideSideBar()"></i></a></li>
+                <li><a href="../HTML/index.html">Trang chủ</a></li>
+                <li><a href="../HTML/thucdon2.html">Thực đơn</a></li>
+                <li><a href="../HTML/dat_ban.html" >Đặt bàn</a></li>
+                <li><a href="../HTML/dien-ten.html">Đặt món</a></li>
+                <li><a href="#" onclick="den3()">Liên hệ</a></li>
+            </ul>
+            <ul class="hideOnMobile">
+                <li class="hideOnMobile" onclick="den1()"><a href="../HTML/index.html" >Trang chủ</a></li>
+                <li class="hideOnMobile"><a href="../HTML/thucdon2.html">Thực đơn</a></li>
+                <li class="hideOnMobile"><a href="../HTML/dat_ban.html">Đặt bàn</a></li>
+                <li class="hideOnMobile"><a href="../HTML/dien-ten.html">Đặt món</a></li>
+                <li class="hideOnMobile" onclick="den3()"><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <a href="#"><i class="fa-solid fa-bars fa-xl" onclick="showSideBar()"></i></a>
+        </div>
+    </header>
+
+<div class="review-container">
+    <h1>Đánh Giá Nhà Hàng Gà Rán</h1>
+
+    <form id="reviewForm">
+        <div class="rating">
+            <label for="rating">Đánh giá:</label>
+            <div class="stars">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+            </div>
+        </div>
+
+        <label for="review">Nhận xét:</label>
+        <textarea id="review" name="review" placeholder="Viết nhận xét của bạn tại đây..." required></textarea>
+
+        <button type="submit">Gửi đánh giá</button>
+    </form>
+
+    <div id="reviewsSection">
+        <h2>Nhận xét của khách hàng:</h2>
+        <ul id="reviewsList"></ul>
+    </div>
+</div>
+
+<script src="../JS/danhgia.js"></script> 
+<script src="../JS/index.js"></script>
+</body>
+</html>

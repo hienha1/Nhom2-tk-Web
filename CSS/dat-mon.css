@@ -8,7 +8,13 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
+.fa-house{
+    font-size: 24px;
+    cursor: pointer;
+  }
+ .fa-house:hover{
+    color: brown;
+ }
 h1 {
     text-align: center;
     color: steelblue;

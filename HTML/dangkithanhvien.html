@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Nhận Khuyến Mãi Gà Rán</title>
+    <script src="../JS/dangkithanhvien.js" defer></script>
+    <link rel="stylesheet" href="../CSS/dangkithanhvien.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d0837e32c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/res.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="Logo">
+        </div>
+
+        <div class="bar">
+            <ul class="sidebar">
+                <li><a href="#"><i class="fa-solid fa-xmark fa-xl" onclick="hideSideBar()"></i></a></li>
+                <li><a href="../HTML/index.html">Trang chủ</a></li>
+                <li><a href="../HTML/thucdon2.html">Thực đơn</a></li>
+                <li><a href="../HTML/dat_ban.html" >Đặt bàn</a></li>
+                <li><a href="../HTML/dien-ten.html">Đặt món</a></li>
+                <li><a href="#" onclick="den3()">Liên hệ</a></li>
+            </ul>
+            <ul class="hideOnMobile">
+                <li class="hideOnMobile"><a href="../HTML/index.html">Trang chủ</a></li>
+                <li class="hideOnMobile"><a href="../HTML/thucdon2.html">Thực đơn</a></li>
+                <li class="hideOnMobile"><a href="../HTML/dat_ban.html">Đặt bàn</a></li>
+                <li class="hideOnMobile"><a href="../HTML/dien-ten.html">Đặt món</a></li>
+                <li class="hideOnMobile" onclick="den3()"><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <a href="#"><i class="fa-solid fa-bars fa-xl" onclick="showSideBar()"></i></a>
+        </div>
+    </header>
+
+    <div class="containers">
+        <h1>Đăng Ký Nhận Khuyến Mãi Gà Rán</h1>
+        <p>Điền thông tin của bạn để nhận khuyến mãi đặc biệt từ nhà hàng của chúng tôi!</p>
+
+        <form onsubmit="dangki(event)"> 
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <button type="submit">Đăng Ký Ngay</button>
+        </form>
+    </div>
+    <script src="../JS/index.js"></script>
+</body>
+</html>

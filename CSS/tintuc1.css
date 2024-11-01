@@ -1,0 +1,83 @@
+
+/* Định dạng phần nội dung khuyến mãi Noel */
+.promotion{
+    background-color: #fff3e0; 
+    border: 2px solid #d84315; 
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    overflow: hidden;
+}
+
+.promotion::before {
+    content: '';
+    background: url('noel-bg.png') no-repeat center;
+    opacity: 0.1; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.promotion h2 {
+    font-size: 2.5em;
+    color: #b71c1c; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.promotion p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    z-index: 1;
+    position: relative;
+}
+
+.promotion p strong {
+    color: #d84315; 
+    font-size: 1.4em;
+}
+
+.promotion .promo-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6f00; 
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.promotion .promo-btn:hover {
+    background-color: #e65100; 
+}
+/* Căn chỉnh hình ảnh */
+img {
+    width: 100%; 
+    max-width: 800px;
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+    z-index: -1; 
+}
+main {
+    padding-top: 80px; 
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/tintuc.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/res.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d0837e32c9.js" crossorigin="anonymous"></script>
+    <title>Do Do Chicken</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="Logo">
+        </div>
+
+        <div class="bar">
+            <ul class="sidebar">
+                <li><a href="#"><i class="fa-solid fa-xmark fa-xl" onclick="hideSideBar()"></i></a></li>
+                <li><a href="../HTML/index.html">Trang chủ</a></li>
+                <li><a href="../HTML/thucdon2.html">Thực đơn</a></li>
+                <li><a href="../HTML/dat_ban.html" >Đặt bàn</a></li>
+                <li><a href="../HTML/dien-ten.html">Đặt món</a></li>
+                <li><a href="#" onclick="den3()">Liên hệ</a></li>
+            </ul>
+            <ul class="hideOnMobile">
+                <li class="hideOnMobile" onclick="den1()"><a href="../HTML/index.html" >Trang chủ</a></li>
+                <li class="hideOnMobile"><a href="../HTML/thucdon2.html">Thực đơn</a></li>
+                <li class="hideOnMobile"><a href="../HTML/dat_ban.html">Đặt bàn</a></li>
+                <li class="hideOnMobile"><a href="../HTML/dien-ten.html">Đặt món</a></li>
+                <li class="hideOnMobile" onclick="den3()"><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <a href="#"><i class="fa-solid fa-bars fa-xl" onclick="showSideBar()"></i></a>
+        </div>
+    </header>
+    <section id="news">
+        <h2>Tin Tức Khuyến Mãi</h2>
+        <!-- Bài khuyến mãi 1 -->
+        <a href="tintuc1.html" class="promo-link">
+        <article class="promo-item">
+            <img src="../Images/tin-tuc-1.png" alt="Khuyến mãi mùa giáng sinh" class="promo-img">
+            <div class="promo-content">
+                <h3>Giáng Sinh An Lành - Gà Rán Siêu Ưu Đãi Giảm 50%!</h3>
+                <p>🎄 Mùa Giáng Sinh này, hãy cùng gia đình và bạn bè thưởng thức những món gà rán ngon tuyệt với ưu đãi đặc biệt giảm 50% cho tất cả các phần gà từ ngày 20/12 đến 25/12!</p>
+            </div>
+        </article>
+
+        <!-- Bài khuyến mãi 2 -->
+        <a href="tintuc2.html" class="promo-link">
+        <article class="promo-item">
+            <img src="../Images/tin-tuc-2.png" alt="Mua 1 tặng 1 vào thứ 4" class="promo-img">
+            <div class="promo-content">
+                <h3>Thứ Tư Vui Vẻ - Happy Wednesday</h3>
+                <p> Đừng bỏ lỡ cơ hội nhận thêm 1 phần gà rán và free thêm nước ngọt vào thứ tư hàng tuần nhé !</p>
+            </div>
+        </article>
+
+        <a href="tintuc3.html" class="promo-link">
+    <article class="promo-item">
+        <img src="../Images/tin-tuc-3.png" alt="Combo tiết kiệm" class="promo-img">
+        <div class="promo-content">
+            <h3>Combo Siêu Tiết Kiệm - Chỉ 99k!</h3>
+            <p>Từ 01/11 đến 30/11, combo gà rán giòn tan, khoai tây chiên lớn và nước ngọt chỉ 99k! Đặt hàng ngay để nhận ưu đãi siêu hấp dẫn này!</p>
+        </div>
+    </article>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
