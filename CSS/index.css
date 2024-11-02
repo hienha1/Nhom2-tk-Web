@@ -156,6 +156,7 @@ header{
 .about.section-padding{
     background-color: #FEEAD3;
     padding-bottom: 30px;
+    display: flex;
 }
 .section-title{
     width: 100%;
