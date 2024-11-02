@@ -90,25 +90,107 @@ button {
     margin-bottom: 5px;
     
  }
- @media (max-width:979px) {
-    
-    .reservationForm{
-        max-width: 80%;
+ @media only screen and (max-width: 1200px) {
+    nav h1 {
+        padding-left: 200px;
+        font-size: 36px;
     }
- }
- @media (max-width: 480px){
-    .reservation {
-        max-width: 80%; /* Giảm thêm chiều rộng khi màn hình nhỏ hơn 480px */
-        padding: 15px; /* Giảm padding để biểu mẫu nhỏ hơn */
+    .reservation form {
+        width: 60%;
     }
+}
 
-    h2 {
-        font-size: 30px; /* Giảm kích thước tiêu đề */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 5px;
     }
-    
-    .input-group input,
-    .button-group button {
-        padding: 8px; /* Giảm padding để các trường nhỏ hơn */
-        font-size: 0.9em; /* Giảm kích thước font */
+    nav h1 {
+        padding-left: 0;
+        font-size: 28px;
+        text-align: center;
     }
- }
+    nav a {
+        font-size: 24px;
+    }
+    .reservation form {
+        width: 80%;
+        padding: 30px;
+    }
+    .reservation form input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav h1 {
+        font-size: 24px;
+    }
+    .reservation form h2 {
+        font-size: 24px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 18px;
+    }
+    .reservation form input {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    nav h1 {
+        font-size: 30px;
+    }
+    .reservation form {
+        width: 40%;
+    }
+    .reservation form h2 {
+        font-size: 35px;
+    }
+    button {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 5px;
+    }
+    nav h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .reservation form {
+        width: 80%;
+        padding: 20px;
+    }
+    .reservation form h2 {
+        font-size: 28px;
+    }
+    .reservation form input {
+        width: 90%;
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    nav h1 {
+        font-size: 20px;
+    }
+    .reservation form h2 {
+        font-size: 24px;
+    }
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .reservation form input {
+        width: 100%;
+    }
+}

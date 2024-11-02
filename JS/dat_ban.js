@@ -41,6 +41,17 @@ document.getElementById("reservationForm").addEventListener("submit",function(ev
         alert("Không thể đặt bàn quá 3 tháng kể từ hôm nay.");
         return;
     }
+    let selectedDay = selectedDate.getDay();
+    let [hour, minute] = time.split(":").map(Number);
+
+    
+    if (
+        (selectedDay >= 1 && selectedDay <= 5 && (hour < 9 || hour > 22 || (hour === 22 && minute > 0))) || 
+        ((selectedDay === 0 || selectedDay === 6) && (hour < 8 || hour > 23 || (hour === 23 && minute > 30))) 
+    ) {
+        alert("Thời gian đặt bàn không hợp lệ. Vui lòng đặt trong khung giờ hoạt động.");
+        return;
+    }
 
     alert("Dat ban thanh cong!");
 });
